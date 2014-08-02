@@ -30,6 +30,8 @@ def detect_impl(_arr,len,shift)
 end
 
 File.open(ARGV[0]).each_line do |line|
+	line.delete!("\n")
+	
 	arr = line.split(" ")
 	for i in (0..arr.size-1)
 		res = detect(arr,i)

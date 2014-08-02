@@ -10,5 +10,7 @@ def fib(n)
 end
 
 File.open(ARGV[0]).each_line do |line|
+	line.delete!("\n")
+	
     puts fib(line.to_i)
 end

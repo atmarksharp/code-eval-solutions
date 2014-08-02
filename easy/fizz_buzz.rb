@@ -1,4 +1,6 @@
 File.open(ARGV[0]).each_line do |line|
+    line.delete!("\n")
+    
     args = line.split(" ")
     a = args[0].to_i
     b = args[1].to_i

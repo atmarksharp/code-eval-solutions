@@ -9,6 +9,8 @@ end
 @texts = []
 
 File.open(ARGV[0]).each_line do |line|
+	line.delete!("\n")
+	
     if int_str?(line)
     	@num = line.to_i
     else

@@ -47,6 +47,8 @@ def run(context)
 end
 
 File.open(ARGV[0]).each_line do |line|
+	line.delete!("\n")
+	
 	terms = line.split(" ")
 	context = parse(terms)
 	puts run(context)

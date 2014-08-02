@@ -82,6 +82,8 @@ end
 
 
 File.open(ARGV[0]).each_line do |line|
+	line.delete!("\n")
+	
 	arr1,arr2 = line.split(";").map{|arr| arr.split("")}
 	puts find_lcs(arr1,arr2)
 end
