@@ -1,0 +1,7 @@
+Hello,ell
+This is good, is
+CodeEval,C*Eval
+Old,Young
+Test*Test,t\*T
+1Test*2Test,t\*\*T
+1Test*2Test,t\**T
